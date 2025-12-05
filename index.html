@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Red Panda Website</title>
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Full-page forest background */
+.homepage-banner {
+    background-image: url('images/forest-background.jpg');
+    width: 100%;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 5px black;
+    padding: 20px;
+}
+
+/* Section preview cards */
+.section-preview {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.section-preview:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255,255,255,0.7);
+}
+
+.section-preview a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.previews-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 30px;
+}
+</style>
+</head>
+<body>
+<div class="homepage-banner">
+    <h1>Red Panda World</h1>
+    <p>Explore facts, images, habitats, and ways to help conserve red pandas!</p>
+
+    <div class="previews-container">
+        <div class="section-preview">
+            <h2>Information</h2>
+            <p>Learn all about red pandas and their behavior.</p>
+            <a href="info.html">Go</a>
+        </div>
+
+        <div class="section-preview">
+            <h2>Gallery</h2>
+            <p>See red pandas in their natural habitats and sanctuaries.</p>
+            <a href="gallery.html">Go</a>
+        </div>
+
+        <div class="section-preview">
+            <h2>Habitat</h2>
+            <p>Discover where red pandas live around the world.</p>
+            <a href="habitat.html">Go</a>
+        </div>
+
+        <div class="section-preview">
+            <h2>Fun Facts</h2>
+            <p>Interesting and quirky facts about red pandas.</p>
+            <a href="funfacts.html">Go</a>
+        </div>
+
+        <div class="section-preview">
+            <h2>Get Involved</h2>
+            <p>Support conservation efforts and help red pandas.</p>
+            <a href="getinvolved.html">Go</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
